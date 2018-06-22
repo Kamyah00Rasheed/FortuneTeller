@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
-        android:text="Fortune Teller"
+        android:text="@string/fortune_teller"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,7 +28,7 @@
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="cursive"
-        android:text="Pick A Color!"
+        android:text="@string/pick_a_color"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,11 +36,12 @@
         app:layout_constraintTop_toBottomOf="@+id/title_fortuneteller_textview" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/main_star_imageview"
         android:layout_width="wrap_content"
         android:layout_height="85dp"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@android:string/yes"
         app:layout_constraintBottom_toTopOf="@+id/pick_color_textview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,45 +56,45 @@
         android:layout_marginEnd="112dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:background="@android:color/holo_red_dark"
-        android:text="R E D"
+        android:background="#cc0000"
+        android:text="@string/r_e_d"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/pick_orange_button"
+        app:layout_constraintEnd_toStartOf="@+id/pick_blue_button"
         app:layout_constraintHorizontal_bias="0.886"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.885" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/pick_blue_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="44dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/holo_blue_dark"
-        android:text="B L U E"
+        android:text="@string/b_l_u_e"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintBottom_toTopOf="@+id/pick_yellow_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.885" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/pick_orange_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:layout_marginStart="44dp"
         android:background="@android:color/holo_orange_dark"
         android:padding="4dp"
-        android:text="O R A N G E"
+        android:text="@string/o_r_a_n_g_e"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/pick_yellow_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -101,10 +102,10 @@
         android:layout_marginStart="112dp"
         android:background="@android:color/holo_orange_light"
         android:padding="4dp"
-        android:text="Y E L L O W"
+        android:text="@string/y_e_l_l_o_w"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.181"
-        app:layout_constraintStart_toEndOf="@+id/button3" />
+        app:layout_constraintStart_toEndOf="@+id/pick_orange_button" />
 
 </android.support.constraint.ConstraintLayout>

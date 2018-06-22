@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FortuneTeller</string>
+    <string name="fortune_teller">Fortune Teller</string>
+    <string name="pick_a_color">Pick A Color!</string>
+    <string name="r_e_d">R E D</string>
+    <string name="b_l_u_e">B L U E</string>
+    <string name="o_r_a_n_g_e">O R A N G E</string>
+    <string name="y_e_l_l_o_w">Y E L L O W</string>
 </resources>
